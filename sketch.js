@@ -36,5 +36,18 @@ function draw() {
   text(chL[cChar][0],200,200);
 }
 
-
+function mousePressed(){
+  if(mouseX<180&&mouseY<180){
+    let tmpX=int(mouseX/20);
+    let tmpY=int(mouseY/20);
+    print(tmpX,tmpY);
+    let g=chL[cChar][2];
+    for (let i = 0; i < g.length; i++) {
+      for (let j = 0; j < g[i].length; j++) {
+        g[i][j]++;
+        if(g[i][j]==3){g[i][j]=0;}
+      } 
+    }
+  }
+}
 
