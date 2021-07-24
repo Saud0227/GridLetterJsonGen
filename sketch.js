@@ -55,7 +55,8 @@ function mousePressed(){
     //console.log(chL);
   }else if(mouseY>200){
     let json = {};
-    
+    json.data = chL;
+    saveJSON(json, 'letterData.json');
   }
 }
 
