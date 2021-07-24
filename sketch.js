@@ -12,7 +12,7 @@ function setup() {
     if(chL[h][0]=="m"||chL[h][0]=="w"){chL[h][1]=1;}
     let g=[];
 
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 5+4*chL[h][1]; i++) {
       g[i]=[];
       for (let j = 0; j < 9; j++) {
         g[i][j]=0;
@@ -53,6 +53,9 @@ function mousePressed(){
     if(cChar>chL.length-1){cChar=0;}
     if(cChar<0){cChar=chL.length-1;}
     //console.log(chL);
+  }else if(mouseY>200){
+    let json = {};
+    
   }
 }
 
